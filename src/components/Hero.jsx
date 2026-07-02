@@ -1,47 +1,25 @@
-import { motion } from "framer-motion";
-
 export default function Hero() {
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) element.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section id="inicio" style={styles.hero}>
-      <motion.img 
-        src="/logo.png" 
-        alt="Stampa Logo" 
-        style={styles.logoImg}
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 0.5 }}
-      />
+      {/* ... (tu código anterior se mantiene igual hasta los botones) ... */}
       
-      <motion.h1
-        style={styles.title}
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
-        Lo que imagines lo plasmamos en <span style={{ color: "#FFCC00" }}>papel o tela</span>
-      </motion.h1>
-
-      <motion.p
-        style={styles.subtitle}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
-      >
-        Todo para tus eventos y negocio. Printing Service de alta calidad.
-      </motion.p>
-
-      <motion.div
-        style={styles.buttons}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.6 }}
-      >
-        <button style={styles.primary}>Ver Trabajos</button>
-        <button style={styles.secondary}>Cotizar Pedido</button>
-      </motion.div>
+      <div style={styles.buttons}>
+        <button style={styles.primary} onClick={() => handleScroll("servicios")}>
+          Ver Trabajos
+        </button>
+        <a href="https://wa.me/523300000000" target="_blank" rel="noreferrer" style={styles.secondary}>
+          WhatsApp
+        </a>
+      </div>
     </section>
   );
 }
+// (Mantén el mismo objeto styles que ya tenías)
 
 const styles = {
   hero: {

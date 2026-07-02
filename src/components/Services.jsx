@@ -2,7 +2,6 @@ export default function Services() {
   return (
     <section id="servicios" style={styles.section}>
       <h2 style={styles.title}>Nuestros Trabajos</h2>
-
       <div style={styles.grid}>
         {items.map((item, index) => (
           <div key={index} style={styles.card}>
@@ -16,9 +15,16 @@ export default function Services() {
 }
 
 const items = [
-  { title: "Playeras Personalizadas", img: "/playeras1.jpg" },
-  { title: "Diseños para Eventos", img: "/playeras2.jpg" },
-  { title: "Stickers y Papelería", img: "/stickers.jpg" }
+  { title: "Playeras Amarillas", img: "/playeras1.png" },
+  { title: "Diseño Tiburón", img: "/playeras2.png" },
+  { title: "Back to School", img: "/stickers.png" },
+  { title: "Más eventos", img: "/logo.png" },
+  { title: "Tarjetas primera comunion", img: "/playeras4.png" },
+  { title: "Diseño Cobra Kai", img: "/playeras5.png" },
+  { title: "Dia de Muertos", img: "/playeras7.png" },
+  { title: "Calendario escolar", img: "/playeras8.png" },
+  { title: "Etiquetas personalizadas", img: "/playeras9.png" },
+  { title: "Diseño Personalizado", img: "/playeras10.png" }
 ];
 
 const styles = {
@@ -32,12 +38,12 @@ const styles = {
     color: "#FFCC00",
     fontSize: "36px",
     marginBottom: "50px",
-    letterSpacing: "2px"       // Título principal con más presencia
+    letterSpacing: "2px"
   },
   grid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-    gap: "40px",               // Mucho más espacio entre las tarjetas
+    gap: "40px",
     maxWidth: "1000px",
     margin: "0 auto"
   },

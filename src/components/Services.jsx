@@ -30,13 +30,14 @@ const styles = {
   },
   title: {
     color: "#FFCC00",
-    fontSize: "32px",
-    marginBottom: "40px"
+    fontSize: "36px",
+    marginBottom: "50px",
+    letterSpacing: "2px"       // Título principal con más presencia
   },
   grid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-    gap: "30px",
+    gap: "40px",               // Mucho más espacio entre las tarjetas
     maxWidth: "1000px",
     margin: "0 auto"
   },
@@ -52,8 +53,9 @@ const styles = {
     objectFit: "cover"
   },
   cardTitle: {
-    padding: "20px",
+    padding: "25px 20px",
     margin: 0,
-    fontSize: "20px"
+    fontSize: "22px",
+    letterSpacing: "0.5px"
   }
 };

@@ -57,36 +57,42 @@ const styles = {
     marginBottom: "20px"
   },
   title: {
-    fontSize: "42px",
-    marginBottom: "15px",
+    fontSize: "44px",
+    marginBottom: "20px",
     maxWidth: "800px",
-    margin: "0 auto 15px auto"
+    margin: "0 auto 20px auto",
+    lineHeight: "1.4",          // Esto separa los renglones
+    letterSpacing: "1.5px"      // Esto separa las letras
   },
   subtitle: {
     opacity: 0.8,
-    marginBottom: "30px",
-    fontSize: "18px"
+    marginBottom: "35px",
+    fontSize: "20px",
+    lineHeight: "1.6",          // Renglones más separados
+    letterSpacing: "0.5px"      // Letras con más aire
   },
   buttons: {
     display: "flex",
     justifyContent: "center",
-    gap: "15px"
+    gap: "20px"                 // Más espacio entre los botones
   },
   primary: {
-    padding: "12px 25px",
+    padding: "14px 28px",
     background: "#FFCC00",
     border: "none",
     color: "black",
     fontWeight: "bold",
+    letterSpacing: "1px",
     borderRadius: "8px",
     cursor: "pointer"
   },
   secondary: {
-    padding: "12px 25px",
+    padding: "14px 28px",
     background: "transparent",
     border: "2px solid #FFCC00",
     color: "#FFCC00",
     fontWeight: "bold",
+    letterSpacing: "1px",
     borderRadius: "8px",
     cursor: "pointer"
   }

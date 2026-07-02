@@ -5,20 +5,18 @@ export default function About() {
         <h2 style={styles.title}>¿Por qué elegirnos?</h2>
 
         <div style={styles.box}>
-          <p>✔ Frescura diaria</p>
-          <p>✔ Ingredientes premium</p>
-          <p>✔ Atención rápida</p>
-          <p>✔ Experiencia familiar</p>
+          <p>✔ Impresión de alta resolución</p>
+          <p>✔ Diseños 100% personalizados</p>
+          <p>✔ Entregas puntuales</p>
+          <p>✔ Atención a cada detalle</p>
         </div>
       </section>
 
-      {/* CONTACTO (nivel ventas) */}
       <section id="contacto" style={styles.contact}>
         <h2 style={styles.title}>Contacto</h2>
-
-        <p>📍 Guadalajara, Jalisco</p>
-        <p>📞 33 0000 0000</p>
-        <p>💬 WhatsApp disponible 24/7</p>
+        <p>📍 Entregas a acordar (Servicio seguro)</p>
+        <p>📞 Atención directa por Redes Sociales</p>
+        <p>💬 Cotiza tu idea con nosotros</p>
       </section>
     </>
   );
@@ -28,11 +26,13 @@ const styles = {
   section: {
     padding: "80px 20px",
     textAlign: "center",
-    background: "#0f172a"
+    background: "#111",
+    color: "white"
   },
   title: {
     fontSize: "28px",
-    marginBottom: "20px"
+    marginBottom: "20px",
+    color: "#FFCC00"
   },
   box: {
     marginTop: "20px",
@@ -43,7 +43,8 @@ const styles = {
   contact: {
     padding: "80px 20px",
     textAlign: "center",
-    background: "#111827",
-    borderTop: "1px solid rgba(255,255,255,0.1)"
+    background: "#0a0a0a",
+    color: "white",
+    borderTop: "1px solid #333"
   }
 };

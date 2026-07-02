@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer style={styles.footer}>
-      <p>© 2026 Marisquería El Puerto - Todos los derechos reservados</p>
+      <p>© 2026 Stampa Pinaple party - Todos los derechos reservados</p>
       <p>📞 WhatsApp: 33 0000 0000</p>
     </footer>
   );

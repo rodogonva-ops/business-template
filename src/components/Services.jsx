@@ -1,12 +1,13 @@
 export default function Services() {
   return (
-    <section id="menu" style={styles.section}>
-      <h2>Especialidades</h2>
+    <section id="servicios" style={styles.section}>
+      <h2 style={styles.title}>Nuestros Trabajos</h2>
 
       <div style={styles.grid}>
-        {items.map((item) => (
-          <div key={item} style={styles.card}>
-            {item}
+        {items.map((item, index) => (
+          <div key={index} style={styles.card}>
+            <img src={item.img} alt={item.title} style={styles.image} />
+            <h3 style={styles.cardTitle}>{item.title}</h3>
           </div>
         ))}
       </div>
@@ -15,30 +16,44 @@ export default function Services() {
 }
 
 const items = [
-  "🦐 Camarones",
-  "🐟 Pescados",
-  "🐙 Pulpo",
-  "🦀 Mariscada"
+  { title: "Playeras Personalizadas", img: "/playeras1.jpg" },
+  { title: "Diseños para Eventos", img: "/playeras2.jpg" },
+  { title: "Stickers y Papelería", img: "/stickers.jpg" }
 ];
 
 const styles = {
   section: {
     padding: "80px 20px",
-    textAlign: "center"
+    textAlign: "center",
+    background: "#0a0a0a",
+    color: "white"
+  },
+  title: {
+    color: "#FFCC00",
+    fontSize: "32px",
+    marginBottom: "40px"
   },
   grid: {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
-    gap: "20px",
-    marginTop: "30px"
+    gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+    gap: "30px",
+    maxWidth: "1000px",
+    margin: "0 auto"
   },
   card: {
-    padding: "25px",
+    background: "#1a1a1a",
     borderRadius: "15px",
-    background: "rgba(255,255,255,0.05)",
-    border: "1px solid rgba(255,255,255,0.1)",
-    backdropFilter: "blur(10px)",
-    transition: "0.3s",
-    cursor: "pointer"
+    overflow: "hidden",
+    border: "1px solid #333"
+  },
+  image: {
+    width: "100%",
+    height: "250px",
+    objectFit: "cover"
+  },
+  cardTitle: {
+    padding: "20px",
+    margin: 0,
+    fontSize: "20px"
   }
 };
